@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical" />-->
+    <!--</ScrollView>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="Search for courses"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/rounded_corner"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lyfragment1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+
+            <fragment
+                android:id="@+id/fragment"
+                android:name="nti.newhorizons.newhorizons.view.fragment.courses.VendorsSelection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_vendors_selection" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyfragment2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/fragment2"
+                android:name="nti.newhorizons.newhorizons.view.fragment.courses.CatogrysSelection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_catogrys_selection" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

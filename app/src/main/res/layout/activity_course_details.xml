@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.courseDetails.courseDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--//Pic part-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/carddetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:cardBackgroundColor="@color/cardview_shadow_start_color"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginHorizontal="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Data Foundations"
+                            android:textColor="#fff"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Start building your data skills today by learning to manipulate, analyze, and visualize data with Excel, SQL, and Tableau."
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/btn"
+                    android:text="   80 % off  "
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40mm"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gh" />
+
+            </RelativeLayout>
+
+            <!--the Blue btns-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:weightSum="3">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6"
+                    android:text="Bookt this Course"
+                    android:theme="@style/mybtn" />
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:text="ADD to List"
+                    android:textColor="#4c5efd" />
+
+
+            </LinearLayout>
+
+            <!--Time and info cardview 1st-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5mm"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="?android:dividerHorizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:text="TIME"
+                            android:textColor="#000"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:text=" 3 Month"
+                            android:textColor="#777"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:text="LAP OPENS"
+                            android:textColor="#000"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:text="Sept 5,2018"
+                            android:textColor="#777"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:text="DURATION"
+                            android:textColor="#000"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:text=" 280 hrs"
+                            android:textColor="#777"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--new design-->
+
+
+            <!--Curriculum For This Course-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Curriculum For This Course"
+                android:paddingLeft="8dp"
+                android:textColor="#4e4d4d"
+                android:textSize="23dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="?android:dividerHorizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/my" />
+
+                    <com.borjabravo.readmoretextview.ReadMoreTextView
+                        android:id="@+id/EXtv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Learn C#, a powerful modern language, from scratch. No prior programming experience is necessary.
+                        Become excellent at using the Unity game engine.
+                        Build a solid foundation for game design and game development that will help you build your own games.
+                        Learn how object oriented programming works in practice.
+                        Personally create playable game projects - good for your portfolio, or just for your own sense of achievement.
+                        Transfer your knowledge to .NET, other languages, and more."
+                        app:trimCollapsedText="show less"
+                        app:trimExpandedText="show more"
+                        app:trimLength="150"
+                        app:trimMode="trimModeLength"
+                        android:textSize="15dp">
+
+                    </com.borjabravo.readmoretextview.ReadMoreTextView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <!-- Requirements my up pic card -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requirements"
+                android:paddingLeft="8dp"
+                android:textColor="#4e4d4d"
+                android:textSize="23dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5mm"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="?android:dividerHorizontal"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nh9" />
+
+                    <com.borjabravo.readmoretextview.ReadMoreTextView
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Learn C#, a powerful modern language, from scratch. No prior programming experience is necessary.
+                        Become excellent at using the Unity game engine.
+                        Build a solid foundation for game design and game development that will help you build your own games.
+                        Learn how object oriented programming works in practice.
+                        Personally create playable game projects - good for your portfolio, or just for your own sense of achievement.
+                        Transfer your knowledge to .NET, other languages, and more."
+                        app:trimCollapsedText="show less"
+                        app:trimExpandedText="show more"
+                        app:trimLength="150"
+                        app:trimMode="trimModeLength">
+
+                    </com.borjabravo.readmoretextview.ReadMoreTextView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Requirements End of up pic card-->
+
+            <!--Description my up pic card-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:paddingLeft="8dp"
+                android:textColor="#4e4d4d"
+                android:textSize="23dp"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5mm"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="?android:dividerHorizontal"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nh9" />
+
+                    <com.borjabravo.readmoretextview.ReadMoreTextView
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Learn C#, a powerful modern language, from scratch. No prior programming experience is necessary.
+                        Become excellent at using the Unity game engine.
+                        Build a solid foundation for game design and game development that will help you build your own games.
+                        Learn how object oriented programming works in practice.
+                        Personally create playable game projects - good for your portfolio, or just for your own sense of achievement.
+                        Transfer your knowledge to .NET, other languages, and more."
+                        app:trimCollapsedText="show less"
+                        app:trimExpandedText="show more"
+                        app:trimLength="150"
+                        app:trimMode="trimModeLength">
+
+                    </com.borjabravo.readmoretextview.ReadMoreTextView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--Description End of up pic card-->
+
+            <!-- level my up pic card-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Level"
+                android:paddingLeft="8dp"
+                android:textColor="#4e4d4d"
+                android:textSize="23dp"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5mm"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="?android:dividerHorizontal"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nh9" />
+
+                    <com.borjabravo.readmoretextview.ReadMoreTextView
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Learn C#, a powerful modern language, from scratch. No prior programming experience is necessary.
+                        Become excellent at using the Unity game engine.
+                        Build a solid foundation for game design and game development that will help you build your own games.
+                        Learn how object oriented programming works in practice.
+                        Personally create playable game projects - good for your portfolio, or just for your own sense of achievement.
+                        Transfer your knowledge to .NET, other languages, and more."
+                        app:trimCollapsedText="show less"
+                        app:trimExpandedText="show more"
+                        app:trimLength="150"
+                        app:trimMode="trimModeLength">
+
+                    </com.borjabravo.readmoretextview.ReadMoreTextView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--End of up pic card-->
+
+            <!-- Includes my up pic card-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Includes"
+                android:paddingLeft="8dp"
+                android:textColor="#4e4d4d"
+                android:textSize="23dp"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5mm"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="?android:dividerHorizontal"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nh9" />
+
+                    <com.borjabravo.readmoretextview.ReadMoreTextView
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Learn C#, a powerful modern language, from scratch. No prior programming experience is necessary.
+                        Become excellent at using the Unity game engine.
+                        Build a solid foundation for game design and game development that will help you build your own games.
+                        Learn how object oriented programming works in practice.
+                        Personally create playable game projects - good for your portfolio, or just for your own sense of achievement.
+                        Transfer your knowledge to .NET, other languages, and more."
+                        app:trimCollapsedText="show less"
+                        app:trimExpandedText="show more"
+                        app:trimLength="150"
+                        app:trimMode="trimModeLength">
+
+                    </com.borjabravo.readmoretextview.ReadMoreTextView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Includes End of up pic card-->
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

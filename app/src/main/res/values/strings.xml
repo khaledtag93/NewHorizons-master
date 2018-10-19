@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">NewHorizons</string>
+    <string name="title_home">Home</string>
+    <string name="title_courses">Courses</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_about">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="About_company">We Empower People Around The World To Succeed Through Learning</string>
+    <string name="abbas_num">+20224024822</string>
+    <string name="october_num">+20238371836</string>
+    <string name="makram_num">+20223520593</string>
+    <string name="mobtadian_num">+20227929177</string>
+    <string name="mobtadian">Mobtadian</string>
+    <string name="abbas">Abbas El Aqaad</string>
+    <string name="october">October</string>
+    <string name="makram">Makram Ebid</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Strings related to login && signUp-->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_phone">Phone</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short"> Login </string>
+    <string name="promot_skip">Skip</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email</string>
+    <string name="permission_no_account">"Have Not Account</string>
+    <string name="permission_new_member">Create Account</string>
+    <string name="SignUp">SignUp</string>
+    <string name="Log_out">Log Out</string>
+    <string name="RetypPassword">Re-typePassword</string>
+</resources>
